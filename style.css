@@ -195,7 +195,7 @@ section {
 
 .section__text__p2 {
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-bottom: rem;
 }
 
 .title {
@@ -275,20 +275,25 @@ section {
 }
 
 .about-containers {
-    gap: 2rem;
+    gap: auto;
     margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     margin-top: 1rem;
+    /* margin-top: 1rem; */
+    display: flex;
 }
 
 .about-details-container {
     justify-content: center;
     flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
     display: flex;
 }
+
+
+/* .about-containers,
+.about-details-container {
+    display: flex;
+} */
 
 .about-pic {
     border-radius: 2rem;
@@ -362,6 +367,27 @@ article .icon {
 }
 
 
+/* Certificate SECTION */
+
+#certificate {
+    position: relative;
+}
+
+.certificate-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: auto;
+    /* margin-bottom: auto; */
+    margin-bottom: 2rem;
+}
+
+.certificate-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -387,6 +413,26 @@ article .icon {
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+}
+
+
+/* Publication */
+
+#publication {
+    position: relative;
+}
+
+.publication-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: auto;
+    margin-bottom: 2rem;
+}
+
+.publication-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -457,21 +503,34 @@ footer p {
 
 /* } */
 
-*/ .experience-details-container {
-    display: flex;
-    justify-content: space-between;
-    /* Additional styles for the containers */
-}
+
+/* */
+
+
+/* .experience-details-container { */
+
+
+/* display: flex; */
+
+
+/* justify-content: space-between; */
+
+
+/* Additional styles for the containers */
+
+
+/* } */
 
 
 /* Adjust styles for the timeline and work experience items */
 
-* {
+
+/* * {
     margin: 10;
     padding: 0;
     box-sizing: border-box;
     justify-content: center;
-}
+} */
 
 
 /* body{
@@ -494,6 +553,8 @@ footer p {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
+    flex: 1;
 }
 
 main.row {
@@ -514,6 +575,7 @@ main.row {
     background-color: #ffffff;
     cursor: pointer;
     transition: all 0.4s;
+    /* margin-bottom: auto; */
     margin-bottom: 20px;
 }
 
