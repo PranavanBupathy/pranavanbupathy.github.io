@@ -423,6 +423,35 @@ article .icon {
 }
 
 
+/* --------- */
+
+.project-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.project-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-containers,
+.project-details-container {
+    display: flex;
+}
+
+.project-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+
 /* PUBLICATION SECTION */
 
 #publication {
