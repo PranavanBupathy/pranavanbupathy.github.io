@@ -362,10 +362,43 @@ article .icon {
 }
 
 
+/* certificate SECTION */
+
+#certificate {
+    position: relative;
+}
+
+.certificate-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: auto;
+    margin-bottom: 2rem;
+}
+
+.certificate-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 /* PROJECTS SECTION */
 
 #projects {
     position: relative;
+}
+
+.projects-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: auto;
+    margin-bottom: 2rem;
+}
+
+.projects-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .color-container {
@@ -385,6 +418,47 @@ article .icon {
 }
 
 .project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+
+/* PUBLICATION SECTION */
+
+#publication {
+    position: relative;
+}
+
+.publication-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: auto;
+    margin-bottom: 2rem;
+}
+
+.publication-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+}
+
+.publication-img {
+    border-radius: 1rem;
+    width: 90%;
+    height: 90%;
+}
+
+.publication-title {
+    margin: 1rem;
+    color: black;
+}
+
+.publication-btn {
     color: black;
     border-color: rgb(163, 163, 163);
 }
