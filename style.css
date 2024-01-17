@@ -331,7 +331,7 @@ section {
 .experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
-    font-size: auto;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -352,9 +352,10 @@ section {
 
 article {
     display: flex;
+    flex-wrap: wr;
     width: 10rem;
     justify-content: space-around;
-    gap: 0.5rem;
+    gap: 1.5rem;
 }
 
 article .icon {
@@ -380,6 +381,9 @@ article .icon {
     justify-content: center;
     flex-direction: column;
 }
+
+
+/* PROJECTS SECTION */
 
 
 /* PROJECTS SECTION */
@@ -449,6 +453,65 @@ article .icon {
     position: absolute;
     right: -5rem;
     bottom: 2.5rem;
+}
+
+
+/* -------------- project_2 ------------ */
+
+#projects_2 {
+    position: relative;
+}
+
+.projects_2-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: auto;
+    margin-bottom: 2rem;
+}
+
+.projects_2-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project_2-img {
+    border-radius: 1rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project_2-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project_2-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+
+/* --------- */
+
+.project_2-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.project_2-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project_2-containers,
+.project_2-details-container {
+    display: flex;
+}
+
+.project_2-pic {
+    border-radius: 2rem;
 }
 
 
