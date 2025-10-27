@@ -434,25 +434,22 @@
         /* PROJECTS SECTION */
         /* ============ PROJECTS SECTION (GRID VERSION) ============ */
 
-		#projects, 
-		#projects_2 {
+		#projects {
 		  position: relative;
 		  padding: 60px 0;
 		  text-align: center;
 		  background-color: #fff;
 		}
 		
-		.projects-sub-title,
-		.projects_2-sub-title {
+		.projects-sub-title {
 		  color: rgb(85, 85, 85);
 		  font-weight: 600;
 		  font-size: 1.4rem;
 		  margin-bottom: 2.5rem;
 		}
 		
-		/* ============ GRID CONTAINER ============ */
-		.projects-details-container,
-		.projects_2-details-container {
+		/* Grid Container */
+		.projects-details-container {
 		  display: grid;
 		  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 		  gap: 2rem;
@@ -461,7 +458,7 @@
 		  justify-items: center;
 		}
 		
-		/* ============ EACH PROJECT CARD ============ */
+		/* Each Project Card */
 		.details-container {
 		  width: 100%;
 		  max-width: 350px;
@@ -478,8 +475,114 @@
 		  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 		}
 		
-		/* ============ IMAGE ============ */
-		.project-img,
+		/* Image */
+		.project-img {
+		  border-radius: 1rem;
+		  width: 100%;
+		  height: 220px;
+		  object-fit: cover;
+		}
+		
+		/* Title */
+		.project-title {
+		  margin: 1rem 0;
+		  color: black;
+		  font-weight: 600;
+		  font-size: 1rem;
+		}
+		
+		/* Button */
+		.project-btn {
+		  color: black;
+		  border: 1px solid rgb(163, 163, 163);
+		  padding: 0.6rem 1.2rem;
+		  border-radius: 6px;
+		  background-color: white;
+		  cursor: pointer;
+		  transition: all 0.3s ease;
+		}
+		
+		.project-btn:hover {
+		  background-color: rgb(240, 240, 240);
+		}
+		
+		/* ============ RESPONSIVENESS ============ */
+		@media (max-width: 1024px) {
+		  #projects {
+		    padding: 50px 0;
+		  }
+		  .projects-sub-title {
+		    font-size: 1.25rem;
+		  }
+		}
+		
+		@media (max-width: 768px) {
+		  #projects {
+		    padding: 40px 0;
+		  }
+		  .projects-sub-title {
+		    font-size: 1.1rem;
+		  }
+		  .project-title {
+		    font-size: 0.95rem;
+		  }
+		  .details-container {
+		    padding: 14px;
+		    max-width: 100%;
+		  }
+		}
+		
+		@media (max-width: 480px) {
+		  .projects-details-container {
+		    width: 95%;
+		    gap: 1.5rem;
+		  }
+		  .project-img {
+		    height: 180px;
+		  }
+		}
+		
+		/* ============ PROJECTS_2 SECTION (GRID VERSION) ============ */
+		
+		#projects_2 {
+		  position: relative;
+		  padding: 60px 0;
+		  text-align: center;
+		  background-color: #fff;
+		}
+		
+		.projects_2-sub-title {
+		  color: rgb(85, 85, 85);
+		  font-weight: 600;
+		  font-size: 1.4rem;
+		  margin-bottom: 2.5rem;
+		}
+		
+		.projects_2-details-container {
+		  display: grid;
+		  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		  gap: 2rem;
+		  width: 90%;
+		  margin: 0 auto;
+		  justify-items: center;
+		}
+		
+		#projects_2 .details-container {
+		  width: 100%;
+		  max-width: 350px;
+		  background: rgb(250, 250, 250);
+		  border: 1px solid rgb(163, 163, 163);
+		  border-radius: 12px;
+		  padding: 18px;
+		  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+		  transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+		
+		#projects_2 .details-container:hover {
+		  transform: translateY(-6px);
+		  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+		}
+		
 		.project_2-img {
 		  border-radius: 1rem;
 		  width: 100%;
@@ -487,8 +590,6 @@
 		  object-fit: cover;
 		}
 		
-		/* ============ TITLE ============ */
-		.project-title,
 		.project_2-title {
 		  margin: 1rem 0;
 		  color: black;
@@ -496,8 +597,6 @@
 		  font-size: 1rem;
 		}
 		
-		/* ============ BUTTON ============ */
-		.project-btn,
 		.project_2-btn {
 		  color: black;
 		  border: 1px solid rgb(163, 163, 163);
@@ -508,52 +607,46 @@
 		  transition: all 0.3s ease;
 		}
 		
-		.project-btn:hover,
 		.project_2-btn:hover {
 		  background-color: rgb(240, 240, 240);
 		}
 		
-		/* ============ RESPONSIVENESS ============ */
-		
-		/* Tablet */
+		/* RESPONSIVE for PROJECTS_2 */
 		@media (max-width: 1024px) {
-		  #projects, #projects_2 {
+		  #projects_2 {
 		    padding: 50px 0;
 		  }
-		  .projects-sub-title, .projects_2-sub-title {
+		  .projects_2-sub-title {
 		    font-size: 1.25rem;
 		  }
 		}
 		
-		/* Mobile */
 		@media (max-width: 768px) {
-		  #projects, #projects_2 {
+		  #projects_2 {
 		    padding: 40px 0;
 		  }
-		  .projects-sub-title, .projects_2-sub-title {
+		  .projects_2-sub-title {
 		    font-size: 1.1rem;
 		  }
-		  .project-title, .project_2-title {
+		  .project_2-title {
 		    font-size: 0.95rem;
 		  }
-		  .details-container {
+		  #projects_2 .details-container {
 		    padding: 14px;
 		    max-width: 100%;
 		  }
 		}
 		
-		/* Small Mobile */
 		@media (max-width: 480px) {
-		  .projects-details-container,
 		  .projects_2-details-container {
 		    width: 95%;
 		    gap: 1.5rem;
 		  }
-		  .project-img,
 		  .project_2-img {
 		    height: 180px;
 		  }
 		}
+
 
 		/* ========================= PUBLICATION SECTION ========================= */
 		#publication {
@@ -796,6 +889,7 @@
             background-color: #777;
 
         }
+
 
 
 
