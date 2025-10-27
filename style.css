@@ -431,33 +431,135 @@
 		}
 
 		/* Honar and award */
+		/* ============ HONORS & AWARDS SECTION ============ */
+
 		#Honors-awards {
 		  position: relative;
-		  padding: 50px 0;
+		  padding: 60px 0;
 		  text-align: center;
-		}
-
-		/* Each individual award box */
-		#Honors-awards .details-container {
-		  flex: 1 1 250px;
-		  max-width: 320px;
-		  background-color: #f9f9f9;
-		  border-radius: 10px;
-		  padding: 15px;
-		  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		  background-color: #fff;
 		}
 		
-		/* Images inside award box */
+		/* Section top small text */
+		#Honors-awards .section__text__p1 {
+		  color: rgb(85, 85, 85);
+		  font-size: clamp(1rem, 2vw, 1.3rem);
+		  font-weight: 500;
+		  margin-bottom: 0.5rem;
+		}
+		
+		/* Main heading */
+		#Honors-awards .title {
+		  color: #222;
+		  font-size: clamp(1.8rem, 4vw, 2.8rem); /* Responsive scaling */
+		  font-weight: 700;
+		  margin-bottom: 2rem;
+		}
+		
+		/* Certificates container */
+		.certificate-details-container {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  flex-wrap: wrap; /* makes responsive rows */
+		  gap: 25px;
+		  width: 90%;
+		  margin: auto;
+		}
+		
+		/* Each award box */
+		#Honors-awards .details-container {
+		  flex: 1 1 280px; /* responsive base width */
+		  max-width: 320px;
+		  background-color: #f9f9f9;
+		  border-radius: 12px;
+		  padding: 20px;
+		  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+		  transition: transform 0.2s ease, box-shadow 0.2s ease;
+		}
+		
+		#Honors-awards .details-container:hover {
+		  transform: translateY(-5px);
+		  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+		}
+		
+		/* Image inside award box */
 		#Honors-awards .project-img {
 		  width: 100%;
 		  height: 200px;
 		  object-fit: cover;
-		  border-radius: 8px;
+		  border-radius: 10px;
 		}
 		
-		/* Buttons below image */
+		/* Certificate title */
+		.certificate-sub-title {
+		  color: rgb(60, 60, 60);
+		  font-size: clamp(1rem, 2.5vw, 1.3rem);
+		  font-weight: 600;
+		  margin: 12px 0 8px 0;
+		}
+		
+		/* Button container */
 		#Honors-awards .btn-container {
 		  margin-top: 10px;
+		}
+		
+		/* View button */
+		.btn {
+		  padding: 10px 18px;
+		  border: none;
+		  border-radius: 8px;
+		  cursor: pointer;
+		  font-weight: 600;
+		  font-size: 0.95rem;
+		  transition: background 0.2s ease;
+		}
+		
+		.btn-color-2 {
+		  background-color: #0078ff;
+		  color: white;
+		}
+		
+		.btn-color-2:hover {
+		  background-color: #005ecb;
+		}
+		
+		/* Arrow icon at bottom */
+		#Honors-awards .arrow {
+		  width: 35px;
+		  margin-top: 30px;
+		  cursor: pointer;
+		  transition: transform 0.2s ease;
+		}
+		
+		#Honors-awards .arrow:hover {
+		  transform: translateY(4px);
+		}
+		
+		/* ============ RESPONSIVE TWEAKS ============ */
+		@media (max-width: 768px) {
+		  #Honors-awards {
+		    padding: 40px 0;
+		  }
+		
+		  #Honors-awards .project-img {
+		    height: 160px;
+		  }
+		
+		  #Honors-awards .details-container {
+		    max-width: 280px;
+		    padding: 15px;
+		  }
+		}
+		
+		@media (max-width: 480px) {
+		  #Honors-awards .project-img {
+		    height: 140px;
+		  }
+		
+		  .certificate-sub-title {
+		    font-size: 1rem;
+		  }
 		}
 
         /* PROJECTS SECTION */
@@ -823,6 +925,7 @@
             background-color: #777;
 
         }
+
 
 
 
