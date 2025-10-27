@@ -515,15 +515,6 @@
 		  transition: background 0.2s ease;
 		}
 		
-		.btn-color-2 {
-		  background-color: ##0D0594;
-		  color: white;
-		}
-		
-		.btn-color-2:hover {
-		  background-color: #005ecb;
-		}
-		
 		/* Arrow icon at bottom */
 		#Honors-awards .arrow {
 		  width: 35px;
@@ -925,6 +916,7 @@
             background-color: #777;
 
         }
+
 
 
 
