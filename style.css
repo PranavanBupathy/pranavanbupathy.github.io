@@ -433,7 +433,7 @@
         /* PROJECTS SECTION */
         /* PROJECTS SECTION */
         
-        /* #projects {
+        #projects {
             position: relative;
         }
         
@@ -469,10 +469,10 @@
         .project-btn {
             color: black;
             border-color: rgb(163, 163, 163);
-        } */
+        }
         /* --------- */
         
-        /* .project-containers {
+        .project-containers {
             gap: 2rem;
             margin-bottom: 2rem;
             margin-top: 1rem;
@@ -496,10 +496,10 @@
             position: absolute;
             right: -5rem;
             bottom: 2.5rem;
-        } */
+        }
         /* -------------- project_2 ------------ */
         
-        /* #projects_2 {
+        #projects_2 {
             position: relative;
         }
         
@@ -530,10 +530,10 @@
         .project_2-btn {
             color: black;
             border-color: rgb(163, 163, 163);
-        } */
+        }
         /* --------- */
         
-        /* .project_2-containers {
+        .project_2-containers {
             gap: 2rem;
             margin-bottom: 2rem;
             margin-top: 1rem;
@@ -551,7 +551,7 @@
         
         .project_2-pic {
             border-radius: 2rem;
-        } */
+        }
         /* PUBLICATION SECTION */
         /* 
         #publication {
@@ -591,150 +591,6 @@
             color: black;
             border-color: rgb(163, 163, 163);
         } */
-		/* ========================= PROJECTS SECTION ========================= */
-		/* ========================= PROJECTS SECTION ========================= */
-		#projects {
-		  position: relative;
-		  padding: 50px 0;
-		  text-align: center;
-		}
-		
-		.projects-sub-title {
-		  color: rgb(85, 85, 85);
-		  font-weight: 600;
-		  font-size: 1.2rem;
-		  margin-bottom: 2rem;
-		}
-		
-		/* Keep column layout but centered */
-		.projects-details-container {
-		  display: flex;
-		  flex-direction: column; /* stack vertically */
-		  justify-content: center;
-		  align-items: center;
-		  width: 90%;
-		  margin: 0 auto;
-		  gap: 2rem; /* space between each project */
-		}
-		
-		/* Each individual project box */
-		#projects .details-container {
-		  width: 100%;
-		  max-width: 600px; /* keeps content centered and readable */
-		  background: rgb(250, 250, 250);
-		  border: 1px solid rgb(163, 163, 163);
-		  border-radius: 10px;
-		  padding: 20px;
-		  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-		  text-align: center;
-		}
-		
-		/* Image */
-		.project-img {
-		  border-radius: 1rem;
-		  width: 100%;
-		  height: auto;
-		  max-height: 350px; /* optional: limit tall images */
-		  object-fit: cover;
-		}
-		
-		/* Text */
-		.project-title {
-		  margin: 1rem 0;
-		  color: black;
-		}
-		
-		/* Button */
-		.project-btn {
-		  color: black;
-		  border-color: rgb(163, 163, 163);
-		}
-		
-		/* Responsive tweaks */
-		@media (max-width: 768px) {
-		  #projects .details-container {
-		    max-width: 90%;
-		  }
-		}
-		
-		@media (max-width: 480px) {
-		  #projects .details-container {
-		    padding: 15px;
-		  }
-		
-		  .project-img {
-		    max-height: 250px;
-		  }
-		}
-		
-		/* ========================= PROJECTS_2 SECTION ========================= */
-			/* ========================= PROJECTS_2 SECTION ========================= */
-		#projects_2 {
-		  position: relative;
-		  padding: 50px 0;
-		  text-align: center;
-		}
-		
-		.projects_2-sub-title {
-		  color: rgb(85, 85, 85);
-		  font-weight: 600;
-		  font-size: 1.2rem;
-		  margin-bottom: 2rem;
-		}
-		
-		.projects_2-details-container {
-		  display: flex;
-		  flex-direction: row; /* horizontal on desktop */
-		  justify-content: center;
-		  align-items: flex-start;
-		  width: 90%;
-		  margin: 0 auto;
-		  gap: 2rem;
-		  flex-wrap: wrap; /* allows wrapping if too many items */
-		}
-		
-		#projects_2 .details-container {
-		  flex: 1 1 45%; /* responsive width on larger screens */
-		  max-width: 600px;
-		  background: rgb(250, 250, 250);
-		  border: 1px solid rgb(163, 163, 163);
-		  border-radius: 10px;
-		  padding: 20px;
-		  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-		  text-align: center;
-		}
-		
-		.project_2-img {
-		  border-radius: 1rem;
-		  width: 100%;
-		  height: auto;
-		  max-height: 350px;
-		  object-fit: cover;
-		}
-		
-		.project_2-title {
-		  margin: 1rem 0;
-		  color: black;
-		}
-		
-		.project_2-btn {
-		  color: black;
-		  border-color: rgb(163, 163, 163);
-		}
-		
-		/* Stack vertically on mobile */
-		@media (max-width: 768px) {
-		  .projects_2-details-container {
-		    flex-direction: column;
-		    align-items: center;
-		  }
-		  
-		  #projects_2 .details-container {
-		    flex: 1 1 100%;
-		    max-width: 90%;
-		  }
-		}
-
 		
 		/* ========================= PUBLICATION SECTION ========================= */
 		#publication {
@@ -977,6 +833,7 @@
             background-color: #777;
 
         }
+
 
 
 
