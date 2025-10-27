@@ -516,12 +516,12 @@
 		}
 
 		.btn-color-2 {
-		  background-color: #0078ff;
+		  background-color: #002A59;
 		  color: white;
 		}
 		
 		.btn-color-2:hover {
-		  background-color: #003A7D;
+		  background-color: #0078ff;
 		}
 
 		/* Arrow icon at bottom */
@@ -925,6 +925,7 @@
             background-color: #777;
 
         }
+
 
 
 
