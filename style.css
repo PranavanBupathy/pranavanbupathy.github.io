@@ -592,6 +592,7 @@
             border-color: rgb(163, 163, 163);
         } */
 		/* ========================= PROJECTS SECTION ========================= */
+		/* ========================= PROJECTS SECTION ========================= */
 		#projects {
 		  position: relative;
 		  padding: 50px 0;
@@ -605,21 +606,21 @@
 		  margin-bottom: 2rem;
 		}
 		
-		/* Container: horizontal on desktop, stacked on mobile */
+		/* Keep column layout but centered */
 		.projects-details-container {
 		  display: flex;
+		  flex-direction: column; /* stack vertically */
 		  justify-content: center;
-		  align-items: flex-start;
-		  flex-wrap: wrap;
-		  gap: 2rem;
+		  align-items: center;
 		  width: 90%;
 		  margin: 0 auto;
+		  gap: 2rem; /* space between each project */
 		}
 		
-		/* Each project card */
+		/* Each individual project box */
 		#projects .details-container {
-		  flex: 1 1 300px; /* flexible width */
-		  max-width: 350px;
+		  width: 100%;
+		  max-width: 600px; /* keeps content centered and readable */
 		  background: rgb(250, 250, 250);
 		  border: 1px solid rgb(163, 163, 163);
 		  border-radius: 10px;
@@ -628,32 +629,41 @@
 		  text-align: center;
 		}
 		
+		/* Image */
 		.project-img {
 		  border-radius: 1rem;
 		  width: 100%;
-		  height: 200px;
+		  height: auto;
+		  max-height: 350px; /* optional: limit tall images */
 		  object-fit: cover;
 		}
 		
+		/* Text */
 		.project-title {
 		  margin: 1rem 0;
 		  color: black;
 		}
 		
+		/* Button */
 		.project-btn {
 		  color: black;
 		  border-color: rgb(163, 163, 163);
 		}
 		
-		/* Stack vertically on smaller screens */
+		/* Responsive tweaks */
 		@media (max-width: 768px) {
-		  .projects-details-container {
-		    flex-direction: column;
-		    align-items: center;
-		  }
-		
 		  #projects .details-container {
 		    max-width: 90%;
+		  }
+		}
+		
+		@media (max-width: 480px) {
+		  #projects .details-container {
+		    padding: 15px;
+		  }
+		
+		  .project-img {
+		    max-height: 250px;
 		  }
 		}
 		
@@ -673,17 +683,17 @@
 		
 		.projects_2-details-container {
 		  display: flex;
+		  flex-direction: column;
 		  justify-content: center;
-		  align-items: flex-start;
-		  flex-wrap: wrap;
-		  gap: 2rem;
+		  align-items: center;
 		  width: 90%;
 		  margin: 0 auto;
+		  gap: 2rem;
 		}
 		
 		#projects_2 .details-container {
-		  flex: 1 1 300px;
-		  max-width: 350px;
+		  width: 100%;
+		  max-width: 600px;
 		  background: rgb(250, 250, 250);
 		  border: 1px solid rgb(163, 163, 163);
 		  border-radius: 10px;
@@ -695,7 +705,8 @@
 		.project_2-img {
 		  border-radius: 1rem;
 		  width: 100%;
-		  height: 200px;
+		  height: auto;
+		  max-height: 350px;
 		  object-fit: cover;
 		}
 		
@@ -710,11 +721,6 @@
 		}
 		
 		@media (max-width: 768px) {
-		  .projects_2-details-container {
-		    flex-direction: column;
-		    align-items: center;
-		  }
-		
 		  #projects_2 .details-container {
 		    max-width: 90%;
 		  }
@@ -961,5 +967,6 @@
             background-color: #777;
 
         }
+
 
 
