@@ -432,8 +432,103 @@
 
         /* PROJECTS SECTION */
         /* PROJECTS SECTION */
-        
-        #projects {
+        /* ============ PROJECTS SECTION (GRID VERSION) ============ */
+
+		#projects {
+		position: relative;
+		padding: 60px 0;
+		text-align: center;
+		background-color: #fff;
+		}
+		
+		.projects-sub-title {
+		color: rgb(85, 85, 85);
+		font-weight: 600;
+		font-size: 1.4rem;
+		margin-bottom: 2.5rem;
+		}
+		
+		/* Grid Container */
+		.projects-details-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+		gap: 2rem;
+		width: 90%;
+		margin: 0 auto;
+		justify-items: center;
+		}
+		
+		/* Each Project Card */
+		.details-container {
+		width: 100%;
+		max-width: 350px;
+		background: rgb(250, 250, 250);
+		border: 1px solid rgb(163, 163, 163);
+		border-radius: 12px;
+		padding: 18px;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+		
+		.details-container:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+		}
+		
+		/* Image */
+		.project-img {
+		border-radius: 1rem;
+		width: 100%;
+		height: 220px;
+		object-fit: cover;
+		}
+		
+		/* Title */
+		.project-title {
+		margin: 1rem 0;
+		color: black;
+		font-weight: 600;
+		font-size: 1rem;
+		}
+		
+		/* Button */
+		.project-btn {
+		color: black;
+		border: 1px solid rgb(163, 163, 163);
+		padding: 0.6rem 1.2rem;
+		border-radius: 6px;
+		background-color: white;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		}
+		
+		.project-btn:hover {
+		background-color: rgb(240, 240, 240);
+		}
+		
+		/* ============ RESPONSIVENESS ============ */
+		
+		@media (max-width: 768px) {
+		#projects {
+		padding: 40px 0;
+		}
+		.projects-sub-title {
+		font-size: 1.2rem;
+		}
+		}
+		
+		@media (max-width: 480px) {
+		.projects-sub-title {
+		font-size: 1.1rem;
+		}
+		.project-title {
+		font-size: 0.95rem;
+		}
+		.details-container {
+		padding: 14px;
+		}
+		}
+        /* #projects {
             position: relative;
         }
         
@@ -469,10 +564,10 @@
         .project-btn {
             color: black;
             border-color: rgb(163, 163, 163);
-        }
+        } */
         /* --------- */
         
-        .project-containers {
+        /* .project-containers {
             gap: 2rem;
             margin-bottom: 2rem;
             margin-top: 1rem;
@@ -496,10 +591,10 @@
             position: absolute;
             right: -5rem;
             bottom: 2.5rem;
-        }
+        } */
         /* -------------- project_2 ------------ */
         
-        /* #projects_2 {
+        #projects_2 {
             position: relative;
         }
         
@@ -552,7 +647,7 @@
         .project_2-pic {
             border-radius: 2rem;
         } */
-		#projects_2 {
+		/* #projects_2 {
 		position: relative;
 		padding: 50px 0;
 		text-align: center;
@@ -898,6 +993,7 @@
             background-color: #777;
 
         }
+
 
 
 
