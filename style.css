@@ -605,111 +605,120 @@
         }
         /* -------------- project_2 ------------ */
 
-		/* ============ PROJECT_2 SECTION (GRID VERSION) ============ */
-
+		/* ============ PROJECT_2 SECTION (HORIZONTAL TO VERTICAL) ============ */
+		
 		#projects_2 {
-		    position: relative;
-		    padding: 60px 0;
-		    text-align: center;
-		    background-color: #fff;
+			position: relative;
+			padding: 60px 0;
+			text-align: center;
+			background-color: #fff;
 		}
 		
 		/* Subtitle */
 		.projects_2-sub-title {
-		    color: rgb(85, 85, 85);
-		    font-weight: 600;
-		    font-size: 1.4rem;
-		    margin-bottom: 2rem;
+			color: rgb(85, 85, 85);
+			font-weight: 600;
+			font-size: 1.4rem;
+			margin-bottom: 2rem;
 		}
 		
-		/* Main container */
+		/* Wrapper */
 		.projects_2-details-container {
-		    display: grid;
-		    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		    gap: 2rem;
-		    width: 90%;
-		    margin: 0 auto;
-		    justify-items: center;
-		    align-items: stretch;
+			display: flex;
+			flex-direction: row; /* Horizontal on big screens */
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: stretch;
+			gap: 2rem;
+			width: 90%;
+			margin: 0 auto;
 		}
 		
-		/* Each card */
+		/* Each project card */
 		.details-container.color-container {
-		    width: 100%;
-		    max-width: 400px;
-		    padding: 1.2rem;
-		    border: 1px solid rgb(220, 220, 220);
-		    border-radius: 1rem;
-		    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-		    background-color: #fafafa;
-		    transition: transform 0.3s ease, box-shadow 0.3s ease;
+			flex: 1 1 320px; /* Minimum width 320px, flexible growth */
+			max-width: 400px;
+			padding: 1.2rem;
+			border: 1px solid rgb(220, 220, 220);
+			border-radius: 1rem;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+			background-color: #fafafa;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
 		}
 		
 		.details-container.color-container:hover {
-		    transform: translateY(-5px);
-		    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+			transform: translateY(-5px);
+			box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 		}
 		
-		/* Image inside the project card */
+		/* Image */
 		.project_2-img {
-		    width: 100%;
-		    height: auto;
-		    border-radius: 1rem;
-		    object-fit: cover;
+			width: 100%;
+			height: auto;
+			border-radius: 1rem;
+			object-fit: cover;
 		}
 		
-		/* Project title */
+		/* Text content */
 		.project_2-title {
-		    margin: 1rem 0;
-		    font-size: 1.2rem;
-		    font-weight: 600;
-		    color: #222;
+			margin: 1rem 0;
+			font-size: 1.2rem;
+			font-weight: 600;
+			color: #222;
 		}
 		
 		/* Button styling */
 		.project_2-btn {
-		    color: black;
-		    border: 1px solid rgb(163, 163, 163);
-		    padding: 0.6rem 1.2rem;
-		    border-radius: 0.5rem;
-		    background: transparent;
-		    cursor: pointer;
-		    transition: all 0.3s ease;
+			color: black;
+			border: 1px solid rgb(163, 163, 163);
+			padding: 0.6rem 1.2rem;
+			border-radius: 0.5rem;
+			background: transparent;
+			cursor: pointer;
+			transition: all 0.3s ease;
 		}
 		
 		.project_2-btn:hover {
-		    background: rgb(230, 230, 230);
+			background: rgb(230, 230, 230);
 		}
 		
-		/* Images container */
+		/* Image container */
 		.project_2-pic {
-		    border-radius: 2rem;
+			border-radius: 2rem;
 		}
 		
 		/* ----------- RESPONSIVE DESIGN ----------- */
+		
+		/* Tablet */
 		@media (max-width: 992px) {
-		    .projects_2-details-container {
-		        width: 95%;
-		        gap: 1.5rem;
-		    }
+			.projects_2-details-container {
+				width: 95%;
+				gap: 1.5rem;
+			}
 		}
 		
+		/* Mobile: switch to vertical stacking */
 		@media (max-width: 768px) {
-		    .projects_2-details-container {
-		        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-		    }
-		    .project_2-title {
-		        font-size: 1.1rem;
-		    }
+			.projects_2-details-container {
+				flex-direction: column; /* Vertical layout */
+				align-items: center;
+			}
+			.details-container.color-container {
+				max-width: 100%;
+			}
+			.project_2-title {
+				font-size: 1.1rem;
+			}
 		}
 		
+		/* Small mobile adjustments */
 		@media (max-width: 480px) {
-		    .projects_2-sub-title {
-		        font-size: 1.1rem;
-		    }
-		    .project_2-title {
-		        font-size: 1rem;
-		    }
+			.projects_2-sub-title {
+				font-size: 1.1rem;
+			}
+			.project_2-title {
+				font-size: 1rem;
+			}
 		}
 
         
@@ -1008,6 +1017,7 @@
             background-color: #777;
 
         }
+
 
 
 
