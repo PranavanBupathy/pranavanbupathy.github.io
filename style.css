@@ -630,7 +630,13 @@
 		    justify-content: center;
 		    gap: 2rem;
 		}
-		
+
+		.project_2-img {
+            border-radius: 1rem;
+            width: 90%;
+            height: 90%;
+        }
+
 		/* Each card */
 		.details-container.color-container {
 		    flex: 1 1 320px;
@@ -973,6 +979,7 @@
             background-color: #777;
 
         }
+
 
 
 
