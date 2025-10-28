@@ -604,8 +604,116 @@
             bottom: 2.5rem;
         }
         /* -------------- project_2 ------------ */
+
+		/* ============ PROJECT_2 SECTION (GRID VERSION) ============ */
+
+		#projects_2 {
+		    position: relative;
+		    padding: 60px 0;
+		    text-align: center;
+		    background-color: #fff;
+		}
+		
+		/* Subtitle */
+		.projects_2-sub-title {
+		    color: rgb(85, 85, 85);
+		    font-weight: 600;
+		    font-size: 1.4rem;
+		    margin-bottom: 2rem;
+		}
+		
+		/* Main container */
+		.projects_2-details-container {
+		    display: grid;
+		    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		    gap: 2rem;
+		    width: 90%;
+		    margin: 0 auto;
+		    justify-items: center;
+		    align-items: stretch;
+		}
+		
+		/* Each card */
+		.details-container.color-container {
+		    width: 100%;
+		    max-width: 400px;
+		    padding: 1.2rem;
+		    border: 1px solid rgb(220, 220, 220);
+		    border-radius: 1rem;
+		    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+		    background-color: #fafafa;
+		    transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+		
+		.details-container.color-container:hover {
+		    transform: translateY(-5px);
+		    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+		}
+		
+		/* Image inside the project card */
+		.project_2-img {
+		    width: 100%;
+		    height: auto;
+		    border-radius: 1rem;
+		    object-fit: cover;
+		}
+		
+		/* Project title */
+		.project_2-title {
+		    margin: 1rem 0;
+		    font-size: 1.2rem;
+		    font-weight: 600;
+		    color: #222;
+		}
+		
+		/* Button styling */
+		.project_2-btn {
+		    color: black;
+		    border: 1px solid rgb(163, 163, 163);
+		    padding: 0.6rem 1.2rem;
+		    border-radius: 0.5rem;
+		    background: transparent;
+		    cursor: pointer;
+		    transition: all 0.3s ease;
+		}
+		
+		.project_2-btn:hover {
+		    background: rgb(230, 230, 230);
+		}
+		
+		/* Images container */
+		.project_2-pic {
+		    border-radius: 2rem;
+		}
+		
+		/* ----------- RESPONSIVE DESIGN ----------- */
+		@media (max-width: 992px) {
+		    .projects_2-details-container {
+		        width: 95%;
+		        gap: 1.5rem;
+		    }
+		}
+		
+		@media (max-width: 768px) {
+		    .projects_2-details-container {
+		        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+		    }
+		    .project_2-title {
+		        font-size: 1.1rem;
+		    }
+		}
+		
+		@media (max-width: 480px) {
+		    .projects_2-sub-title {
+		        font-size: 1.1rem;
+		    }
+		    .project_2-title {
+		        font-size: 1rem;
+		    }
+		}
+
         
-        #projects_2 {
+        /* #projects_2 {
             position: relative;
         }
         
@@ -636,10 +744,10 @@
         .project_2-btn {
             color: black;
             border-color: rgb(163, 163, 163);
-        }
+        } */
         /* --------- */
         
-        .project_2-containers {
+        /* .project_2-containers {
             gap: 2rem;
             margin-bottom: 2rem;
             margin-top: 1rem;
@@ -657,7 +765,7 @@
         
         .project_2-pic {
             border-radius: 2rem;
-        }
+        } */
 
 		/* ========================= PUBLICATION SECTION ========================= */
 		#publication {
@@ -900,6 +1008,7 @@
             background-color: #777;
 
         }
+
 
 
 
