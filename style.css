@@ -603,8 +603,7 @@
             right: -5rem;
             bottom: 2.5rem;
         }
-        /* ============ PROJECT_2 SECTION (FINAL VERSION) ============ */
-
+	   /* Outer section wrapper */
 		#projects_2 {
 		    position: relative;
 		    padding: 60px 0;
@@ -612,30 +611,36 @@
 		    background-color: #fff;
 		}
 		
-		/* Main container */
+		/* Main flex container */
 		.projects_2-details-container {
 		    display: flex;
+		    flex-direction: row;
 		    flex-wrap: wrap;
 		    justify-content: center;
+		    align-items: stretch;
 		    gap: 2rem;
 		    width: 90%;
 		    margin: 0 auto;
 		}
 		
-		/* Each project card */
+		/* Group wrapper (if multiple project groups exist) */
+		.project_2-containers {
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: center;
+		    gap: 2rem;
+		}
+		
+		/* Each card */
 		.details-container.color-container {
 		    flex: 1 1 320px;
 		    max-width: 400px;
-		    background-color: #fafafa;
-		    border: 1px solid #e0e0e0;
+		    padding: 1.2rem;
+		    border: 1px solid rgb(220, 220, 220);
 		    border-radius: 1rem;
 		    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-		    overflow: hidden; /* keeps image within rounded border */
+		    background-color: #fafafa;
 		    transition: transform 0.3s ease, box-shadow 0.3s ease;
-		    display: flex;
-		    flex-direction: column;
-		    justify-content: space-between;
-		    text-align: center;
 		}
 		
 		.details-container.color-container:hover {
@@ -643,79 +648,32 @@
 		    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 		}
 		
-		/* Project image */
-		.project_2-img {
-		    width: 100%;
-		    height: auto;
-		    max-width: 100%;
-		    border-radius: 1rem 1rem 0 0;
-		    object-fit: cover;
-		    display: block;
-		}
-		
-		/* Content inside each card */
+		/* Inner content inside card */
 		.article-container {
-		    padding: 1rem 1.5rem;
 		    display: flex;
-		    flex-direction: column;
-		    align-items: center;
-		    text-align: center;
-		    gap: 1rem;
-		}
-		
-		/* Title */
-		.project_2-title {
-		    font-size: 1.1rem;
-		    font-weight: 800;
-		    color: #000;
-		    line-height: 1.4;
-		    text-transform: uppercase;
-		}
-		
-		/* Description paragraph */
-		.article-container p {
-		    color: #333;
-		    font-size: 0.95rem;
-		    line-height: 1.5;
-		    text-align: justify;
-		}
-		
-		/* Button styling */
-		.project_2-btn {
-		    margin-top: 1rem;
-		    color: #000;
-		    border: 1px solid rgb(163, 163, 163);
-		    padding: 0.6rem 1.4rem;
-		    border-radius: 9999px;
-		    background: transparent;
-		    cursor: pointer;
-		    transition: all 0.3s ease;
-		}
-		
-		.project_2-btn:hover {
-		    background: rgb(230, 230, 230);
+		    flex-direction: row;
+		    flex-wrap: wrap;
+		    text-align: initial;
+		    gap: 2.5rem;
+		    justify-content: space-around;
 		}
 		
 		/* ----------- RESPONSIVE DESIGN ----------- */
-		
-		/* Tablets and smaller: stack cards vertically */
 		@media (max-width: 768px) {
-		    .projects_2-details-container {
+		    .projects_2-details-container,
+		    .project_2-containers {
 		        flex-direction: column;
 		        align-items: center;
 		    }
+		
 		    .details-container.color-container {
 		        max-width: 100%;
 		    }
-		}
 		
-		/* Small screens: adjust text size */
-		@media (max-width: 480px) {
-		    .project_2-title {
-		        font-size: 1rem;
-		    }
-		    .article-container p {
-		        font-size: 0.9rem;
+		    .article-container {
+		        flex-direction: column;
+		        align-items: center;
+		        gap: 1.5rem;
 		    }
 		}
 
@@ -1015,6 +973,7 @@
             background-color: #777;
 
         }
+
 
 
 
