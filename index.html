@@ -297,12 +297,10 @@ document.addEventListener('contextmenu', function(e) {
             <div class="project-containers ">
                 <div class="details-container color-container ">
                     <div class="article-container ">
-                        <script
-                        	type="module"
-                        	src="https://gradio.s3-us-west-2.amazonaws.com/6.6.0/gradio.js"
-                        ></script>
-                        
-                        <gradio-app src="https://pranavanbupathy-commercial-aircraft-classification.hf.space"></gradio-app>
+                        <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/6.6.0/gradio.js"></script>
+                    
+                        <!-- Using Repository ID instead of the full URL prevents subdomain resolution errors -->
+                        <gradio-app src="pranavanbupathy/Commercial-aircraft-classification"></gradio-app>
 
 
                         <!-- <div style="display: flex; justify-content: center;">
